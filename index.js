@@ -5,7 +5,7 @@ const fs = require("fs");
 const path = require ("path");
 
 // Create an array of questions for user input
-const questions = [
+const input = [
     {
         type: "input",
         name: "title",
@@ -23,16 +23,26 @@ const questions = [
         choices: ["MIT", "LGPL 3.0", "MPL 2.0", "AGPL 3.0", "Unilicense", "Apache 2.0", "GPL 3.0", "None"]
     },
     {
-        usage
+        type: "input",
+        name: "usage",
+        message: "Input Usage Guidance Instructions:"
     },
     {
-        installation
+        type: "input",
+        name: "installation",
+        message: "Input Installation Command:",
+        default: "npm i"
     },
     {
-        test
+        type: "input",
+        name: "test",
+        message: "Input Test Command",
+        default: "npm test"
     },
     {
-        contributing
+        type: "input",
+        name: "contributing",
+        message: "Input Contribution Guidelines:"
     },
     {
         type: "input",
@@ -40,15 +50,23 @@ const questions = [
         message: "Input GitHub Username:"
     },
     {
-        email
+        type: "input",
+        name: "email",
+        message: "Input Contact Email:"
     }
 ];
 
 // Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), filename), data);
+}
 
 // Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(input).then((inquirerResponses) => {
+        writeToFile("README.md", generateMarkdown({...inquirerResponses}));
+    });
+}
 
 // Function call to initialize app
 init();
