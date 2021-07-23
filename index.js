@@ -53,11 +53,16 @@ const input = [
         type: "input",
         name: "email",
         message: "Input Contact Email:"
+    },
+    {
+        type: "input",
+        name: "website",
+        message: "Input Project Website:"
     }
 ];
 
 // Create a function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(filename, data) {
     return fs.writeFileSync(path.join(process.cwd(), filename), data);
 }
 

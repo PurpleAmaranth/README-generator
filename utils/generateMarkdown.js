@@ -41,7 +41,8 @@ function generateMarkdown(data) {
   ## Table of Contents 
   
   * [Usage](#usage)
-  ${renderLicenseLink(data.license)}
+
+  * [License](#license)
 
   * [Installation](#installation)
 
