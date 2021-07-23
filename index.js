@@ -9,28 +9,38 @@ const questions = [
     {
         type: "input",
         name: "title",
-        message: "Input Title of Project:"
-    },
-    {description
-
+        message: "Input Project Title:"
     },
     {
-
+        type: "input",
+        name: "description",
+        message: "Input Project Description:"
     },
     {
-
+        type: "list",
+        name: "license",
+        message: "Choose License Type:",
+        choices: ["MIT", "LGPL 3.0", "MPL 2.0", "AGPL 3.0", "Unilicense", "Apache 2.0", "GPL 3.0", "None"]
     },
     {
-
+        usage
     },
     {
-
+        installation
     },
     {
-
+        test
     },
     {
-
+        contributing
+    },
+    {
+        type: "input",
+        name: "github",
+        message: "Input GitHub Username:"
+    },
+    {
+        email
     }
 ];
 
