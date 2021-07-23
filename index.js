@@ -1,12 +1,43 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
+const generateMarkdown = require("./utils/generateMarkdown");
+const inquirer = require("inquirer");
+const fs = require("fs");
+const path = require ("path");
 
-// TODO: Create an array of questions for user input
-const questions = [];
+// Create an array of questions for user input
+const questions = [
+    {
+        type: "input",
+        name: "title",
+        message: "Input Title of Project:"
+    },
+    {description
 
-// TODO: Create a function to write README file
+    },
+    {
+
+    },
+    {
+
+    },
+    {
+
+    },
+    {
+
+    },
+    {
+
+    },
+    {
+
+    }
+];
+
+// Create a function to write README file
 function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
+// Create a function to initialize app
 function init() {}
 
 // Function call to initialize app
