@@ -12,7 +12,8 @@
   This program creates a README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer).
 
   ***Walkthrough Video***
-  
+
+https://user-images.githubusercontent.com/36141949/126820995-52398811-9cab-4c7c-ac3e-fcf835ea5172.mp4
 
   ***User Story***
 
